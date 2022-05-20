@@ -51,6 +51,14 @@ git clone https://github.com/strukturag/libheif.git $WORK_DIR/libheif
 cd $WORK_DIR/libheif
 ./autogen.sh && ./configure && make && make install
 
+# echo "⚙️ Installing and configuring ltdl..."
+# git clone https://github.com/frida/libtool/ $WORK_DIR/libtool
+# cd $WORK_DIR/libtool
+# ./configure && make && make install
+
+
+
+
 # get, configure and install newest imagemagick
 echo "⚙️ Installing latest imagemagick..."
 #### git clone https://github.com/ImageMagick/ImageMagick.git $WORK_DIR/imagemagick
@@ -60,7 +68,7 @@ tar xvf ImageMagick-6.9.10-97.tar.xz
 mv ImageMagick-6.9.10-97 imagemagick
 
 cd $WORK_DIR/imagemagick
-./configure --with-heic=yes --prefix=$WORK_DIR/imagemagick --without-gvc --with-ltdl=yes
+./configure --with-heic=yes --prefix=$WORK_DIR/imagemagick --without-gvc
 make && make install
 
 # copy the dependencies into imagemagick lib directory
