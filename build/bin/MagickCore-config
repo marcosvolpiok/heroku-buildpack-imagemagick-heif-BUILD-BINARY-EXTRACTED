@@ -35,28 +35,22 @@ while test $# -gt 0; do
       echo $exec_prefix
       ;;
     --version)
-      echo '7.0.11-5 Q16 HDRI'
+      echo '6.9.10 Q16 '
       ;;
     --cflags)
-      /usr/bin/pkg-config --cflags MagickCore-7.Q16HDRI
+      /usr/bin/pkg-config --cflags MagickCore
       ;;
     --cxxflags)
-      /usr/bin/pkg-config --cflags MagickCore-7.Q16HDRI
+      /usr/bin/pkg-config --cflags MagickCore
       ;;
     --cppflags)
-      /usr/bin/pkg-config --cflags MagickCore-7.Q16HDRI
+      /usr/bin/pkg-config --cflags MagickCore
       ;;
     --ldflags)
-      /usr/bin/pkg-config --libs MagickCore-7.Q16HDRI
+      /usr/bin/pkg-config --libs MagickCore
       ;;
     --libs)
-      /usr/bin/pkg-config --libs MagickCore-7.Q16HDRI
-      ;;
-    --coder-path)
-      echo "/usr/src/imagemagick/lib/ImageMagick-7.0.11/modules-Q16HDRI/coders"
-      ;;
-    --filter-path)
-      echo "/usr/src/imagemagick/lib/ImageMagick-7.0.11/modules-Q16HDRI/filters"
+      /usr/bin/pkg-config --libs MagickCore
       ;;
     *)
       echo "${usage}" 1>&2

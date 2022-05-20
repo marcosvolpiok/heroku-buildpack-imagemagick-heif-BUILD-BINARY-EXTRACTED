@@ -53,7 +53,12 @@ cd $WORK_DIR/libheif
 
 # get, configure and install newest imagemagick
 echo "⚙️ Installing latest imagemagick..."
-git clone https://github.com/ImageMagick/ImageMagick.git $WORK_DIR/imagemagick
+#### git clone https://github.com/ImageMagick/ImageMagick.git $WORK_DIR/imagemagick
+wget https://download.imagemagick.org/ImageMagick/download/releases/ImageMagick-6.9.10-97.tar.xz -P $WORK_DIR
+cd $WORK_DIR
+tar xvf ImageMagick-6.9.10-97.tar.xz
+mv ImageMagick-6.9.10-97 imagemagick
+
 cd $WORK_DIR/imagemagick
 ./configure --with-heic=yes --prefix=$WORK_DIR/imagemagick --without-gvc
 make && make install

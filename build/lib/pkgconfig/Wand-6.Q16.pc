@@ -1,0 +1,15 @@
+prefix=/usr/src/imagemagick
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/ImageMagick-6
+includearchdir=/usr/src/imagemagick/include/ImageMagick-6
+libname=MagickWand-6.Q16
+ 
+Name: MagickWand
+Description: MagickCore - C API for ImageMagick (ABI Q16)
+URL: https://github.com/ImageMagick/ImageMagick6
+Version: 6.9.10
+Requires: MagickCore
+Cflags: -I${includearchdir} -I${includedir} -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16
+Libs: -L${libdir} -l${libname}
+Libs.private: -L${libdir} -l${libname}  -ljbig -llcms2 -ltiff -lfreetype  -ljpeg   -llqr-1 -lglib-2.0 -lpng16 -lz  -ldjvulibre -lfftw3   -lfontconfig -lfreetype -L/usr/local/lib -lheif   -lwmflite  -lXext -lXt   -lSM -lICE -lX11  -llzma -lbz2 -lIlmImf -lImath -lHalf -lIex -lIexMath -lIlmThread -lpthread  -lpangocairo-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lharfbuzz -lcairo   -lxml2  -lz     -lm      -lgomp -lm

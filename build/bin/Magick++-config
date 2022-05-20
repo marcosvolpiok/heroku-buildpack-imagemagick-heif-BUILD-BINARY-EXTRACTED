@@ -38,22 +38,22 @@ while test $# -gt 0; do
       echo $exec_prefix
       ;;
     --version)
-      echo '7.0.11 Q16 HDRI'
+      echo '6.9.10 Q16 '
       ;;
     --cflags)
-      /usr/bin/pkg-config --cflags Magick++-7.Q16HDRI
+      /usr/bin/pkg-config --cflags Magick++
       ;;
     --cxxflags)
-      /usr/bin/pkg-config --cflags Magick++-7.Q16HDRI
+      /usr/bin/pkg-config --cflags Magick++
       ;;
     --cppflags)
-      /usr/bin/pkg-config --cflags Magick++-7.Q16HDRI
+      /usr/bin/pkg-config --cflags Magick++
       ;;
     --ldflags)
-      /usr/bin/pkg-config --libs Magick++-7.Q16HDRI
+      /usr/bin/pkg-config --libs Magick++
       ;;
     --libs)
-      /usr/bin/pkg-config --libs Magick++-7.Q16HDRI
+      /usr/bin/pkg-config --libs Magick++
       ;;
     *)
       echo "${usage}" 1>&2
