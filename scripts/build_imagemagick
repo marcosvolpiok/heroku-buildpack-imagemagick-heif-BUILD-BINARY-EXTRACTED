@@ -56,6 +56,12 @@ cd $WORK_DIR/libheif
 # cd $WORK_DIR/libtool
 # ./configure && make && make install
 
+echo "⚙️ Installing and configuring webp..."
+wget https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.2.2.tar.gz
+tar xvzf libwebp-1.2.2.tar.gz
+cd libwebp-1.2.2
+./configure
+make && make install
 
 
 
@@ -68,7 +74,7 @@ tar xvf ImageMagick-6.9.10-97.tar.xz
 mv ImageMagick-6.9.10-97 imagemagick
 
 cd $WORK_DIR/imagemagick
-./configure --with-heic=yes --prefix=$WORK_DIR/imagemagick --without-gvc
+./configure --with-heic=yes --prefix=$WORK_DIR/imagemagick --without-gvc --with-webp=yes
 make && make install
 
 # copy the dependencies into imagemagick lib directory
