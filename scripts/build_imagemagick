@@ -82,7 +82,7 @@ cp /usr/local/lib/libde265.so.0 $WORK_DIR/imagemagick/lib
 cp /usr/local/lib/libheif.so.1 $WORK_DIR/imagemagick/lib
 cp /usr/lib/x86_64-linux-gnu/libomp.so.5 $WORK_DIR/imagemagick/lib
 cp /usr/lib/x86_64-linux-gnu/libiomp5.so $WORK_DIR/imagemagick/lib
-cp /usr/local/lib/libwebp.la $WORK_DIR/imagemagick/lib
+cp /usr/local/lib/libwebp.so $WORK_DIR/imagemagick/lib
 
 # clean up the build and get ready for packaging
 echo "🧹 Cleaning up..."
