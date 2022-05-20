@@ -60,7 +60,7 @@ tar xvf ImageMagick-6.9.10-97.tar.xz
 mv ImageMagick-6.9.10-97 imagemagick
 
 cd $WORK_DIR/imagemagick
-./configure --with-heic=yes --prefix=$WORK_DIR/imagemagick --without-gvc
+./configure --with-heic=yes --prefix=$WORK_DIR/imagemagick --without-gvc --with-ltdl=yes
 make && make install
 
 # copy the dependencies into imagemagick lib directory
