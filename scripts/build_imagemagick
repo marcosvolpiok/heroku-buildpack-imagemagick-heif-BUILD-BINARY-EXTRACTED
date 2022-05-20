@@ -84,7 +84,8 @@ cp /usr/lib/x86_64-linux-gnu/libomp.so.5 $WORK_DIR/imagemagick/lib
 cp /usr/lib/x86_64-linux-gnu/libiomp5.so $WORK_DIR/imagemagick/lib
 cp /usr/local/lib/libwebp.so.7 $WORK_DIR/imagemagick/lib
 
-cp /usr/local/lib/libwebp.a /usr/local/lib/libwebpdemux.a /usr/local/lib/libwebpdemux.la /usr/local/lib/libwebpdemux.so /usr/local/lib/libwebpdemux.so.2 /usr/local/lib/libwebpdemux.so.2.0.9 /usr/local/lib/libwebp.la /usr/local/lib/libwebpmux.a /usr/local/lib/libwebpmux.la /usr/local/lib/libwebpmux.so /usr/local/lib/libwebpmux.so.3 /usr/local/lib/libwebpmux.so.3.0.8 /usr/local/lib/libwebp.so /usr/local/lib/libwebp.so.7 /usr/local/lib/libwebp.so.7.1.3 $WORK_DIR/imagemagick/lib
+#cp /usr/local/lib/libwebp.a /usr/local/lib/libwebpdemux.a /usr/local/lib/libwebpdemux.la /usr/local/lib/libwebpdemux.so /usr/local/lib/libwebpdemux.so.2 /usr/local/lib/libwebpdemux.so.2.0.9 /usr/local/lib/libwebp.la /usr/local/lib/libwebpmux.a /usr/local/lib/libwebpmux.la /usr/local/lib/libwebpmux.so /usr/local/lib/libwebpmux.so.3 /usr/local/lib/libwebpmux.so.3.0.8 /usr/local/lib/libwebp.so /usr/local/lib/libwebp.so.7 /usr/local/lib/libwebp.so.7.1.3 $WORK_DIR/imagemagick/lib
+#ldconfig /usr/local/lib
 
 # clean up the build and get ready for packaging
 echo "🧹 Cleaning up..."
